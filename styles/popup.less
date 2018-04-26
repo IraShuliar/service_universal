@@ -1,0 +1,129 @@
+@import 'mixins';
+
+
+.popup{
+    width: 570px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    .popup-subtitle{
+        color: #2c3443;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .input-wrp{
+        margin-bottom: 30px;
+    }
+    .btn{
+        display: inline-block;
+    }
+}
+
+#thanks-popup{
+    height: 360px;
+    line-height: 348px;
+    padding: 0 10px;
+    
+    .in{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+
+
+
+body #imageData #numberDisplay{
+    display: none!important;
+}
+body .my-mfp-slide-bottom.mfp-ready.mfp-bg{
+    background-color: @grey;
+    opacity: 1;
+}
+
+
+body button.mfp-close{
+    color: transparent;
+    font-size: 0px;
+    opacity: 0.8;
+    left: auto;
+    right: 25px;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background: transparent url(../images/close.png) no-repeat center center;
+    &:focus, &:active{
+        top: 25px;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+
+body .mfp-content button.mfp-close{
+    color: transparent;
+    font-size: 0px;
+    opacity: 0.8;
+    left: auto;
+    right: 20px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    background: transparent url(../images/close2.png) no-repeat center center;
+    &:focus, &:active{
+        top: 20px;
+    }
+    &:hover{
+        opacity: 1;
+    }
+    .r320({
+        top: 5px;
+        right: 5px;
+        &:focus, &:active{
+            top: 5px;
+        }
+    });
+}
+
+body .mfp-container{
+
+}
+body .mfp-wrap{
+    min-width: 320px;
+}
+
+/*
+
+body .mfp-image-holder .mfp-close{
+    right: 0;
+    top: -13px;
+    width: 40px;
+    height: 40px;
+    background: transparent url(../images/close-gallery.png) no-repeat center center;
+    &:focus{
+        top: -13px;
+    }
+}
+
+body{
+    .mfp-title{
+        padding-right: 0;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 22px;
+        color: #000;
+        background-color: #fff;
+        position: relative;
+        top: -4px;
+        float: none;
+    }
+}
+*/
+
+
